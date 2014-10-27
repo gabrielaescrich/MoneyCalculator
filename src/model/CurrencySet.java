@@ -1,10 +1,10 @@
 package model;
-import java.util.ArrayList;
+import java.util.HashMap;
 
 public class CurrencySet {
-    private final ArrayList<Currency> set;
+    private final HashMap<String, Currency> set;
 
-    public CurrencySet(ArrayList<Currency> set) {
+    public CurrencySet(HashMap<String,Currency> set) {
         this.set = set;
     }    
     
