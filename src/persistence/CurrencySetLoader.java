@@ -6,8 +6,9 @@ import model.CurrencySet;
 public class CurrencySetLoader {
 
     public CurrencySet load() {
-        CurrencySet pepito = new CurrencySet();
+        CurrencySet set = new CurrencySet();
     }
+   
 
 
 }
