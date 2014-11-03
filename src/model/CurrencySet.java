@@ -7,6 +7,6 @@ public class CurrencySet {
     private final SortedMap<String, Currency> set;
 
     public CurrencySet() {
-        set = new TreeMap<String, Currency>
+        set = new TreeMap<String, Currency>();
     }
 }
