@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Iterator;
+
 public class Currency {
     
     private String name;
@@ -23,6 +25,5 @@ public class Currency {
     public String getSymbol() {
         return symbol;
     }
-    
     
 }
