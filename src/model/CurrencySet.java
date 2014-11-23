@@ -8,4 +8,8 @@ public class CurrencySet {
     public CurrencySet() {
         set = new TreeMap<String, Currency>();
     }
+    public void addCurrency(Currency set){
+        this.set.put(set.getCode(), set);
+    }
 }
+
