@@ -12,4 +12,17 @@ public class CurrencySet {
     public void add(Currency currency){
         set.add(currency);
     }
+
+    public Currency getCurrency(String e) {
+        for(Currency currency : set){
+            if( currency.getName().equals(e)){
+                return currency;
+            }
+        }
+        return null; 
+    }
+
+    public ArrayList<Currency> getSet() {
+        return set;
+    }
 }
