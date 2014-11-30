@@ -9,8 +9,9 @@ public class Money {
         this.currency = currency;
     }
 
-    public float getAmount() {
-        return amount;
+    @Override
+    public String toString() {
+        return amount + " " + currency.getSymbol();
     }
 
     public Currency getCurrency() {
