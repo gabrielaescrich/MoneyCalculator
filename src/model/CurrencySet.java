@@ -1,20 +1,15 @@
 package model;
+import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.SortedMap;
-import java.util.TreeMap;
 
 public class CurrencySet {
-    private final SortedMap<String, Currency> set;
+    private final ArrayList<Currency> set;
 
     public CurrencySet() {
-        set = new TreeMap<String, Currency>();
+        set = new ArrayList<Currency>();
     }
 
-    public void addCurrency(Currency currency) {
-        set.put(currency.getCode(), currency);
-    }
-
-    public Iterator iterator() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void add(Currency currency){
+        set.add(currency);
     }
 }
