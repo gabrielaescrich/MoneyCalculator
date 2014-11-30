@@ -25,4 +25,11 @@ public class CurrencySet {
     public ArrayList<Currency> getSet() {
         return set;
     }
+
+    @Override
+    public String toString() {
+        return "CurrencySet{" + "set=" + set + "}";
+    }
+    
+    
 }

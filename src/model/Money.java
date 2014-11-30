@@ -1,8 +1,8 @@
 package model;
 
 public class Money {
-    private final float amount;
-    private final Currency currency;
+    private float amount;
+    private Currency currency;
 
     public Money(Currency currency, float amount) {
         this.amount = amount;
@@ -12,6 +12,10 @@ public class Money {
     @Override
     public String toString() {
         return amount + " " + currency.getSymbol();
+    }
+
+    public float getAmount() {
+        return amount;
     }
 
     public Currency getCurrency() {

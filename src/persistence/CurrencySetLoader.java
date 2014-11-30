@@ -8,10 +8,10 @@ public class CurrencySetLoader {
 
     public CurrencySet load() {
         CurrencySet set = new CurrencySet();
-        set.addCurrency(new Currency("Euro", "EUR", "€"));
-        set.addCurrency(new Currency("Dolar", "USD", "$"));
-        set.addCurrency(new Currency("Libra", "GBP", "L"));
-        set.addCurrency(new Currency("Yen", "JPY", "Y"));
+        set.add(new Currency("Euro", "EUR", "€"));
+        set.add(new Currency("Dolar", "USD", "$"));
+        set.add(new Currency("Libra", "GBP", "L"));
+        set.add(new Currency("Yen", "JPY", "Y"));
         
         return set;
     }

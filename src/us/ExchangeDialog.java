@@ -17,7 +17,7 @@ public class ExchangeDialog {
     }
 
     private Currency readCurrency(String x) {
-        System.out.print("Elegir divisa " + x + ": ");
+        System.out.println("Elegir divisa " + x + ": ");
         showCurrencies(set);
         Scanner string = new Scanner(System.in);
         
@@ -39,7 +39,7 @@ public class ExchangeDialog {
 
     private void showCurrencies(CurrencySet set) {
         int i = 0;
-        for ( Currency currency : set.getSet()){
+        for (Currency currency : set.getSet()){
             System.out.println(currency.toString() +" (" + i++ + ") ");
         }
     }
