@@ -35,7 +35,7 @@ public class ExchangeDialogPanel extends JPanel implements ExchangeDialog {
     
     @Override
     public Exchange getExchange() {
-        return new Exchange(new Money(from, amount), to);
+        return new Exchange(new Money(amount, from), to);
     }
 
     private JTextField createAmountField() {
