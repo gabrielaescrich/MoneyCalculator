@@ -1,13 +1,7 @@
 package controller;
 
-import model.CurrencySet;
-import model.Exchange;
-import model.ExchangeRate;
-import model.Money;
-import persistence.ExchangeRateLoader;
-import process.Exchanger;
 import us.ExchangeDialog;
-import us.MoneyDisplay;
+
  
 public class ExchangeCommand {
     
