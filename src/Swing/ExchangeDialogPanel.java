@@ -39,7 +39,7 @@ public class ExchangeDialogPanel extends JPanel implements ExchangeDialog {
     }
 
     private JTextField createAmountField() {
-        JTextField input = new JTextField();
+        final JTextField input = new JTextField();
         input.setColumns(20);
         input.addKeyListener(new KeyListener() {
 
@@ -60,7 +60,7 @@ public class ExchangeDialogPanel extends JPanel implements ExchangeDialog {
     }
 
     private JComboBox<Currency> createFromField() {
-        JComboBox<Currency> combo = new JComboBox<>(currencies);
+        final JComboBox<Currency> combo = new JComboBox<>(currencies);
         combo.addItemListener(new ItemListener() {
 
             @Override
@@ -73,7 +73,7 @@ public class ExchangeDialogPanel extends JPanel implements ExchangeDialog {
     }
 
     private JComboBox<Currency> createToField() {
-        JComboBox<Currency> combo = new JComboBox<>(currencies);
+        final JComboBox<Currency> combo = new JComboBox<>(currencies);
         combo.addItemListener(new ItemListener() {
 
             @Override

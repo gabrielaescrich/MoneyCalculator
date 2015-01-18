@@ -4,23 +4,23 @@ public class ExchangeRate {
     
     private Currency from;
     private Currency to;
-    private float rate;  
+    private double rate;  
 
-    public ExchangeRate(Currency from, Currency to, float rate) {
+    public ExchangeRate(Currency from, Currency to, double rate) {
         this.from = from;
         this.to = to;
         this.rate = rate;
     }
 
-    public String getFrom() {
-        return from.toString();
+    public Currency getFrom() {
+        return from;
     }
 
-    public String getTo() {
-        return to.toString();
+    public Currency getTo() {
+        return to;
     }
 
-    public float getRate() {
+    public double getRate() {
         return rate;
     }
     

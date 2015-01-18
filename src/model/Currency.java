@@ -14,6 +14,7 @@ public class Currency {
         this.symbol = symbol;
     }
 
+
     public String getName() {
         return name;
     }
