@@ -6,7 +6,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import model.CurrencySet;
 import persistence.CurrencySetLoader;
-import sqlite.SqliteCurrencySetLoader;
 
 public class Application {
     
