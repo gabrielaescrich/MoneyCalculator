@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class CurrencySet {
+    
     private final ArrayList<Currency> set;
 
     public CurrencySet() {
@@ -29,6 +30,10 @@ public class CurrencySet {
     @Override
     public String toString() {
         return "CurrencySet{" + "set=" + set + "}";
+    }
+    
+    public Currency[] getCurrencies(){
+        return set.toArray(new Currency[set.size()]);
     }
     
     

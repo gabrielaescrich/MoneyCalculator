@@ -1,12 +1,16 @@
 package persistence;
 
+import java.util.Date;
 import model.Currency;
 import model.ExchangeRate;
 
 public class ExchangeRateLoader{
 
-    public ExchangeRate load(Currency from, Currency to){
-        return new ExchangeRate(from, to, (float) 1.34);
+    public ExchangeRate loader(Date date, Currency from, Currency to){
+        return null;
+    }
+    public ExchangeRate loader(Currency from, Currency to){
+        return null;
     }
     
 }

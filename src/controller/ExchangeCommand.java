@@ -8,37 +8,18 @@ import persistence.ExchangeRateLoader;
 import process.Exchanger;
 import us.ExchangeDialog;
 import us.MoneyDisplay;
-
+ 
 public class ExchangeCommand {
     
-    CurrencySet set;
+    private final ExchangeDialog exchangeDialog;
 
-    public ExchangeCommand(CurrencySet set) {
-        this.set = set;
+    public ExchangeCommand(ExchangeDialog exchangeDialog) {
+        this.exchangeDialog = exchangeDialog;
     }
 
     public void execute() {
-        Exchange ex = readExchange();
-        ExchangeRate rate = readExchangeRate(ex);
-        Money result = convert(ex,rate);
-        displayResult(result,rate);
+        System.out.println(exchangeDialog.getExchange().getMoney().getAmount());
+        System.out.println(exchangeDialog.getExchange().getMoney().getCurrency().getCode());
+        System.out.println(exchangeDialog.getExchange().getCurrency().getCode());
     }
-
-    private Exchange readExchange() {
-        return new ExchangeDialog(set).getExchange();
-    }
-
-    private ExchangeRate readExchangeRate(Exchange ex) {
-        return new ExchangeRateLoader().load(ex.getMoney().getCurrency(),ex.getCurrency());
-    }
-
-    private Money convert(Exchange ex, ExchangeRate rate) {
-        return Exchanger.convert(ex.getCurrency(), ex.getMoney().getAmount(), rate.getRate());
-    }
-
-    private void displayResult(Money result, ExchangeRate rate) {
-        new MoneyDisplay(result, rate).display();
-    }
-    
-    
 }

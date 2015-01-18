@@ -1,10 +1,10 @@
 package model;
 
 public class Money {
-    private float amount;
-    private Currency currency;
+    private final double amount;
+    private final Currency currency;
 
-    public Money(Currency currency, float amount) {
+    public Money(Currency currency, double amount) {
         this.amount = amount;
         this.currency = currency;
     }
@@ -14,7 +14,7 @@ public class Money {
         return amount + " " + currency.getSymbol();
     }
 
-    public float getAmount() {
+    public double getAmount() {
         return amount;
     }
 
